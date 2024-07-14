@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/home/static/css/main.fe927caf.css",
-    "main.js": "/home/static/js/main.4d1e8afa.js",
+    "main.js": "/home/static/js/main.c1a3553a.js",
     "static/js/787.4b24f717.chunk.js": "/home/static/js/787.4b24f717.chunk.js",
     "static/media/portrait1.png": "/home/static/media/portrait1.01daccc491a1a4f0b08b.png",
     "static/media/portrait.png": "/home/static/media/portrait.0ff63e4df23f2d95b119.png",
@@ -10,11 +10,11 @@
     "static/media/ifhe-logo.png": "/home/static/media/ifhe-logo.002a59a4115dea140e61.png",
     "index.html": "/home/index.html",
     "main.fe927caf.css.map": "/home/static/css/main.fe927caf.css.map",
-    "main.4d1e8afa.js.map": "/home/static/js/main.4d1e8afa.js.map",
+    "main.c1a3553a.js.map": "/home/static/js/main.c1a3553a.js.map",
     "787.4b24f717.chunk.js.map": "/home/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe927caf.css",
-    "static/js/main.4d1e8afa.js"
+    "static/js/main.c1a3553a.js"
   ]
 }
