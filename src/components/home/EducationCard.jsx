@@ -4,7 +4,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-const ExperienceCard = ({ data }) => {
+const EducationCard = ({ data }) => {
   return (
     <Col lg="6">
       <div className="pb-5 text-center">
@@ -20,4 +20,4 @@ const ExperienceCard = ({ data }) => {
   );
 }
 
-export default ExperienceCard;
+export default EducationCard;
