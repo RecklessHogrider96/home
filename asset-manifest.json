@@ -1,16 +1,20 @@
 {
   "files": {
     "main.css": "/home/static/css/main.fe927caf.css",
-    "main.js": "/home/static/js/main.99830502.js",
+    "main.js": "/home/static/js/main.ff7884a6.js",
     "static/js/787.4b24f717.chunk.js": "/home/static/js/787.4b24f717.chunk.js",
-    "static/media/hashirshoaeb.png": "/home/static/media/hashirshoaeb.23e8b5a1f7de87f03d05.png",
+    "static/media/portrait1.png": "/home/static/media/portrait1.01daccc491a1a4f0b08b.png",
+    "static/media/portrait.png": "/home/static/media/portrait.0ff63e4df23f2d95b119.png",
+    "static/media/portrait2.png": "/home/static/media/portrait2.1ff1d72345ece2f5525c.png",
+    "static/media/neulogoofficial.png": "/home/static/media/neulogoofficial.a81b90466b1f1c5ecc0a.png",
+    "static/media/ifhe-logo.png": "/home/static/media/ifhe-logo.002a59a4115dea140e61.png",
     "index.html": "/home/index.html",
     "main.fe927caf.css.map": "/home/static/css/main.fe927caf.css.map",
-    "main.99830502.js.map": "/home/static/js/main.99830502.js.map",
+    "main.ff7884a6.js.map": "/home/static/js/main.ff7884a6.js.map",
     "787.4b24f717.chunk.js.map": "/home/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe927caf.css",
-    "static/js/main.99830502.js"
+    "static/js/main.ff7884a6.js"
   ]
 }
