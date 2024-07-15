@@ -1,12 +1,17 @@
 {
   "files": {
     "main.css": "/home/static/css/main.fe927caf.css",
-    "main.js": "/home/static/js/main.8ab73ec6.js",
+    "main.js": "/home/static/js/main.de1a25ad.js",
     "static/js/787.4b24f717.chunk.js": "/home/static/js/787.4b24f717.chunk.js",
     "static/media/demo.mp4": "/home/static/media/demo.9c811479f22fee621fc6.mp4",
     "static/media/portrait1.png": "/home/static/media/portrait1.01daccc491a1a4f0b08b.png",
     "static/media/portrait.png": "/home/static/media/portrait.0ff63e4df23f2d95b119.png",
+    "static/media/image (11).png": "/home/static/media/image (11).ceee09308eb9a35d8d35.png",
+    "static/media/image (14).png": "/home/static/media/image (14).91b61ec8750df90ab637.png",
+    "static/media/image (15).png": "/home/static/media/image (15).3a90b2fdb99ce2aa22fd.png",
     "static/media/portrait2.png": "/home/static/media/portrait2.1ff1d72345ece2f5525c.png",
+    "static/media/image (13).png": "/home/static/media/image (13).9cecf4d7623f0fd6aeef.png",
+    "static/media/image (12).png": "/home/static/media/image (12).e29dc9193164fa5dcc5a.png",
     "static/media/resume.pdf": "/home/static/media/resume.872e952d91a17bd156e2.pdf",
     "static/media/neulogoofficial.png": "/home/static/media/neulogoofficial.a81b90466b1f1c5ecc0a.png",
     "static/media/niclogo.png": "/home/static/media/niclogo.ac9ee905f96435f26d42.png",
@@ -14,11 +19,11 @@
     "static/media/miloplelogo.png": "/home/static/media/miloplelogo.544a4e1e2636d31083f4.png",
     "index.html": "/home/index.html",
     "main.fe927caf.css.map": "/home/static/css/main.fe927caf.css.map",
-    "main.8ab73ec6.js.map": "/home/static/js/main.8ab73ec6.js.map",
+    "main.de1a25ad.js.map": "/home/static/js/main.de1a25ad.js.map",
     "787.4b24f717.chunk.js.map": "/home/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe927caf.css",
-    "static/js/main.8ab73ec6.js"
+    "static/js/main.de1a25ad.js"
   ]
 }
