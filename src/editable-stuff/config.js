@@ -67,437 +67,478 @@ const repos = {
   specificRepos: [],
 };
 
-// Leadership SECTION
 const leadership = {
   show: true,
   heading: "Portfolio",
-  message1:
-    "Highlandia: Highlandia is an Android educational app featuring 12 mini-games designed to teach adults conversational English in a fun and engaging way. The app includes games like Bubbles to learn the alphabet and numbers, Tracer to practice writing them, and Phonemes Run for pronunciation. Users can enjoy Shopping Spree to improve listening and reading skills while racing fellow shoppers, and Speak Up for dialogue practice. Highlandia offers a new curriculum, a first-time user experience in the native language, a pre-test, a topics menu, and overall gameplay and visual enhancements.",
-  images1: [
-    { 
-      type: 'video',
-      src: require("../editable-stuff/Highlands/demo.mp4"), 
-      label: "", 
-      paragraph: "" 
+  sections: [
+    {
+      heading: "Highlandia",
+      message: "Highlandia is an Android educational app featuring 12 mini-games designed to teach adults conversational English in a fun and engaging way. The app includes games like Bubbles to learn the alphabet and numbers, Tracer to practice writing them, and Phonemes Run for pronunciation. Users can enjoy Shopping Spree to improve listening and reading skills while racing fellow shoppers, and Speak Up for dialogue practice. Highlandia offers a new curriculum, a first-time user experience in the native language, a pre-test, a topics menu, and overall gameplay and visual enhancements.",
+      media: [
+        {
+          type: 'video',
+          src: require("../editable-stuff/Highlands/demo.mp4"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-  ],
-  message2:
-    "Skylars Run: ",
-  images2: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait2.png"), 
-      label: "", 
-      paragraph: "" 
+    {
+      heading: "Skylars Run",
+      message: "Skylars Run: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait1.png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait1.png"), 
-      label: "", 
-      paragraph: "" 
+    {
+      heading: "Beast Boxers",
+      message: "A PVP boxer game!",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/Beast Boxers/image (11).png"), 
+          label: "Home Screen", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Beast Boxers/image (12).png"), 
+          label: "Waiting for Opponent", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Beast Boxers/image (13).png"), 
+          label: "Online Opponent found!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Beast Boxers/image (14).png"), 
+          label: "Fight!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Beast Boxers/image (15).png"), 
+          label: "You win!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Beast Boxers/image (16).png"), 
+          label: "Fight stats", 
+          paragraph: "" 
+        }
+      ]
     },
-  ],
-  message3:
-    "Beast Boxers: A PVP boxer game!",
-  images3: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Beast Boxers/image (11).png"), 
-      label: "", 
-      paragraph: "Home Screen" 
+    {
+      heading: "Scrabble Vision",
+      message: "A scrabble scorekeeper app using which you can scan your scrabble board to automatically keep score! OpenCV with Unity was used to take multiple scans of the scrabble board and return scanned results.",
+      media: [
+        {
+          type: 'video',
+          src: require("../editable-stuff/Scrabble/ScrabbleDemo.mp4"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Scrabble/scrabble_gary_cropped.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Scrabble/image (10).png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Beast Boxers/image (12).png"), 
-      label: "", 
-      paragraph: "Waiting for Opponent" 
+    {
+      heading: "IKIN",
+      message: "IKIN: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/IKIN/image (17).png"), 
+          label: "The RYZ Holographic Projector", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/IKIN/image (18).png"), 
+          label: "Landing Page", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/IKIN/image (19).png"), 
+          label: "Loading up a Custom Scene which is rendered on the Holographic Projector", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/IKIN/image (20).png"), 
+          label: "You can edit the scene in runtime!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/IKIN/ryzdemo.jpg"), 
+          label: "The RYZ Holographic Projector", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Beast Boxers/image (13).png"), 
-      label: "", 
-      paragraph: "Online Opponent found!" 
+    {
+      heading: "Mogaland",
+      message: "Mogaland: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/Mogaland/image.png"), 
+          label: "Connected Graph Data Structure - Quiz Progression Map", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Mogaland/image (1).png"), 
+          label: "Tiled Islands", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Mogaland/image (1).png"), 
+          label: "Gear System", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Beast Boxers/image (14).png"), 
-      label: "", 
-      paragraph: "Fight!" 
+    {
+      heading: "ThoughtWorld",
+      message: "ThoughtWorld: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait1.png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Beast Boxers/image (15).png"), 
-      label: "", 
-      paragraph: "You win!" 
+    {
+      heading: "Wifi Direct Demo",
+      message: "Wifi Direct Demo: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait1.png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Beast Boxers/image (16).png"), 
-      label: "", 
-      paragraph: "Fight stats" 
+    {
+      heading: "VR Shooting Game",
+      message: "VR Shooting Game",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait1.png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-  ],
-  message4:
-    "Scrabble Vision: A scrabble scorekeeper app using which you can scan your scrabble board to automatically keep score! OpenCV with Unity was used to take multiple scans of the scrabble board and return scanned results.",
-  images4: [
-    { 
-      type: 'video',
-      src: require("../editable-stuff/Scrabble/ScrabbleDemo.mp4"), 
-      label: "", 
-      paragraph: "" 
+    {
+      heading: "Classic Breakout + Level Editor",
+      message: "Classic Breakout + Level Editor: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/breakout/image (21).png"), 
+          label: "Breakout!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/breakout/image (24).png"), 
+          label: "Breakout Level Editor", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff//Scrabble/scrabble_gary_cropped.png"), 
-      label: "", 
-      paragraph: "" 
+    {
+      heading: "Graverunner + Level Editor",
+      message: "A C++ SDL platform runner game with a level editor",
+      media: [
+        {
+          type: 'video',
+          src: require("../editable-stuff/Platformer/GraveRunnerDemo.mp4"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Platformer/image (23).png"), 
+          label: "Graverunner Level Editor", 
+          paragraph: "" 
+        },
+        {
+          type: 'video',
+          src: require("../editable-stuff/Platformer/Oops.mp4"), 
+          label: "Oops, I died!", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Scrabble/image (10).png"), 
-      label: "", 
-      paragraph: "" 
+    {
+      heading: "Tower Defense + Level Editor",
+      message: "A C++ Tower Defense game made on a custom Game engine using SDL with a level editor",
+      media: [
+        {
+          type: 'video',
+          src: require("../editable-stuff/TowerDefense/TowerDefenseDemo.mp4"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/TowerDefense/image (22).png"), 
+          label: "Multiple Custom Maps!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/TowerDefense/image (25).png"), 
+          label: "Level Editor!", 
+          paragraph: "" 
+        }
+      ]
     },
-  ],
-  message5:
-    "IKIN: ",
-  images5: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/IKIN/image (17).png"), 
-      label: "", 
-      paragraph: "The RYZ Holographic Projector" 
+    {
+      heading: "Behavior Trees in Unity",
+      message: "Behavior Trees in Unity: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/BehaviorTreesInUnity/EnemyBT.png"), 
+          label: "Enemy Behavior Tree - Next slide with Code to create this Tree", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/BehaviorTreesInUnity/image (6).png"), 
+          label: "Behavior Tree shown in Previous slide created here", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/BehaviorTreesInUnity/image (7).png"), 
+          label: "Types of Enemies - Long Range", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/BehaviorTreesInUnity/image (8).png"), 
+          label: "Types of Enemies - Short Range", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/BehaviorTreesInUnity/image (9).png"), 
+          label: "Types of Enemies - Medium Range", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/IKIN/image (18).png"), 
-      label: "", 
-      paragraph: "Landing Page" 
+    {
+      heading: "Clash Royale AI",
+      message: "Clash Royale AI: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait1.png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/IKIN/image (19).png"), 
-      label: "", 
-      paragraph: "Loading up a Custom Scene which is rendered on the Holographic Projector" 
+    {
+      heading: "Space Visualizer",
+      message: "Space Visualizer: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait1.png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/IKIN/image (20).png"), 
-      label: "", 
-      paragraph: "You can edit the scene in runtime!" 
+    {
+      heading: "Match3 Engine",
+      message: "You can create your own style of Match3 game by customizing your icons and audio too!",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 8.56 PM.jpg"), 
+          label: "Match 3 game", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 8.58 PM.jpg"), 
+          label: "Customize Icons!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 9.00 PM.jpg"), 
+          label: "Customize Music!", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/IKIN/ryzdemo.jpg"), 
-      label: "", 
-      paragraph: "The RYZ Holographic Projector" 
+    {
+      heading: "Vineyard Valley",
+      message: "Fixed Bugs on the live version for Jam City",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait1.png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-  ],
-  message6:
-    "Mogaland: ",
-  images6: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Mogaland/image.png"), 
-      label: "", 
-      paragraph: "Connected Graph Data Structure - Quiz Progression Map" 
+    {
+      heading: "Cricket 3D Lite",
+      message: "Super small Cricket game!",
+      media: [
+        {
+          type: 'video',
+          src: require("../editable-stuff/MSDCricket/demo.mp4"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/MSDCricket/image (3).png"), 
+          label: "Multiple Game Modes!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/MSDCricket/image (4).png"), 
+          label: "Tournament mode!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/MSDCricket/image (5).png"), 
+          label: "Points Table!", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/MSDCricket/screen-2.jpg"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/MSDCricket/screen-3.jpg"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Mogaland/image (1).png"), 
-      label: "", 
-      paragraph: "Tiled Islands" 
+    {
+      heading: "Furniture AR",
+      message: "Furniture AR:",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait1.png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
     },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Mogaland/image (1).png"), 
-      label: "", 
-      paragraph: "Gear System" 
-    },
-  ],
-  message7:
-    "ThoughtWorld: ",
-  images7: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait2.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait1.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-  ],
-  message8:
-    "Wifi Direct Demo: ",
-  images8: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait2.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait1.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-  ],
-  message9:
-    "VR Shooting Game",
-  images9: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait2.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait1.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-  ],
-  message10:
-    "Classic Breakout + Level Editor: ",
-  images10: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/breakout/image (21).png"), 
-      label: "", 
-      paragraph: "Breakout!" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/breakout/image (24).png"), 
-      label: "", 
-      paragraph: "Breakout Level Editor" 
-    },
-  ],
-  message11:
-    "Graverunner + Level Editor: A C++ SDL platform runner game with a level editor",
-  images11: [
-    { 
-      type: 'video',
-      src: require("../editable-stuff/Platformer/GraveRunnerDemo.mp4"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Platformer/image (23).png"), 
-      label: "", 
-      paragraph: "Graverunner Level Editor" 
-    },
-    { 
-      type: 'video',
-      src: require("../editable-stuff/Platformer/Oops.mp4"), 
-      label: "", 
-      paragraph: "Oops, I died!" 
-    },
-  ],
-  message12:
-    "Tower Defense + Level Editor: A C++ Tower Defense game made on a custom Game engine using SDL with a level editor",
-  images12: [
-    { 
-      type: 'video',
-      src: require("../editable-stuff/TowerDefense/TowerDefenseDemo.mp4"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/TowerDefense/image (22).png"), 
-      label: "", 
-      paragraph: "Multiple Custom Maps!" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/TowerDefense/image (25).png"), 
-      label: "", 
-      paragraph: "Level Editor!" 
-    },
-  ],
-  message13:
-    "Behavior Trees in Unity: ",
-  images13: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/BehaviorTreesInUnity/EnemyBT.png"), 
-      label: "", 
-      paragraph: "Enemy Behavior Tree - Next slide with Code to create this Tree" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/BehaviorTreesInUnity/image (6).png"), 
-      label: "", 
-      paragraph: "Behavior Tree shown in Previous slide created here" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/BehaviorTreesInUnity/image (7).png"), 
-      label: "", 
-      paragraph: "Types of Enemies - Long Range" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/BehaviorTreesInUnity/image (8).png"), 
-      label: "", 
-      paragraph: "Types of Enemies - Short Range" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/BehaviorTreesInUnity/image (9).png"), 
-      label: "", 
-      paragraph: "Types of Enemies - Medium Range" 
-    },
-  ],
-  message14:
-    "Clash Royale AI: ",
-  images14: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait2.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait1.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-  ],
-  message15:
-    "Space Visualizer: ",
-  images15: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait2.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait1.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-  ],
-  message16:
-    "Match3 Engine: You can create your own style of Match3 game by customizing your icons and audio too!",
-  images16: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 8.56 PM.jpg"), 
-      label: "", 
-      paragraph: "Match 3 game" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 8.58 PM.jpg"), 
-      label: "", 
-      paragraph: "Customize Icons!" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 9.00 PM.jpg"), 
-      label: "", 
-      paragraph: "Customize Music!" 
-    },
-  ],
-  message17:
-    "Vineyard Valley: Fixed Bugs on the live version for Jam City",
-  images17: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait2.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait1.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-  ],
-  message18:
-    "Cricket 3D Lite: Super small Cricket game!",
-  images18: [
-    { 
-      type: 'video',
-      src: require("../editable-stuff/MSDCricket/demo.mp4"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/MSDCricket/image (3).png"), 
-      label: "", 
-      paragraph: "Multiple Game Modes!" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/MSDCricket/image (4).png"), 
-      label: "", 
-      paragraph: "Tournament mode!" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/MSDCricket/image (5).png"), 
-      label: "", 
-      paragraph: "Points Table!" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/MSDCricket/screen-2.jpg"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/MSDCricket/screen-3.jpg"), 
-      label: "", 
-      paragraph: "" 
-    },
-  ],
-  message19:
-    "Furniture AR:",
-  images19: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait2.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait1.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-  ],
-  message20:
-    "Virtual Dressing Room: ",
-  images20: [
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait2.png"), 
-      label: "", 
-      paragraph: "" 
-    },
-    { 
-      type: 'image',
-      src: require("../editable-stuff/portrait1.png"), 
-      label: "", 
-      paragraph: "" 
-    },
+    {
+      heading: "Virtual Dressing Room",
+      message: "Virtual Dressing Room: ",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/portrait1.png"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
+    }
   ],
   imageSize: {
     width:"615",
