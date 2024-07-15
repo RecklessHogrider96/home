@@ -85,25 +85,19 @@ const leadership = {
     },
     {
       heading: "Skylars Run",
-      message: "Skylars Run: ",
+      message: "Skylar’s Run provides children a fun yet challenging space to help players grow 13 key cognitive skills governing focus and attention! The goal of the game is for the player to hone these skills while advancing through different levels including infinite runners, item collection, puzzle matching, and more. The difficulty adjusts dynamically as the player progresses in any given level so it is never too hard or too easy but at just the right balance between both. Playable on smartphone and tablet.",
       media: [
         {
-          type: 'image',
-          src: require("../editable-stuff/portrait2.png"), 
+          type: 'video',
+          src: require("../editable-stuff/Skylars run/demosr.mp4"), 
           label: "", 
-          paragraph: "" 
-        },
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait1.png"), 
-          label: "", 
-          paragraph: "" 
+          paragraph: "In-Game footage!" 
         }
       ]
     },
     {
       heading: "Beast Boxers",
-      message: "A PVP boxer game!",
+      message: "A PVP boxer game! Built in Unity and with PUN, this boxing game was inspired by Mortal Kombat and we avoided ALL physics based interactions to make the gameplay as user-input focused as possible, where input timing was key to gameplay satisfaction.",
       media: [
         {
           type: 'image',
@@ -168,8 +162,8 @@ const leadership = {
       ]
     },
     {
-      heading: "IKIN",
-      message: "IKIN: ",
+      heading: "IKIN RYZ",
+      message: "We made a host application which could render scenes built in Unity onto the RYZ Hardware. This host application was also home to other games which could be played on the app on the RYZ hardware by implementing the RYZ SDK.",
       media: [
         {
           type: 'image',
@@ -205,7 +199,7 @@ const leadership = {
     },
     {
       heading: "Mogaland",
-      message: "Mogaland: ",
+      message: "This game focuses on gamifying the learning experience into the Finance world. Players conquer islands by completing various mini-games like Quizes. The rewards earned are gear parts that can be equipped to increase your overall gear score!",
       media: [
         {
           type: 'image',
@@ -221,7 +215,7 @@ const leadership = {
         },
         {
           type: 'image',
-          src: require("../editable-stuff/Mogaland/image (1).png"), 
+          src: require("../editable-stuff/Mogaland/image (2).png"), 
           label: "Gear System", 
           paragraph: "" 
         }
@@ -229,7 +223,7 @@ const leadership = {
     },
     {
       heading: "ThoughtWorld",
-      message: "ThoughtWorld: ",
+      message: "ThoughtWorld is an online platform not centered on pretty pictures, or keeping up with friends, or advocating for causes. It is about ideas. People are hungry for a forum where they can share ideas without being yelled at, laughed at, or cancelled. ThoughtWorld provides a safe place to explore new thoughts, anonymously interact with other verified real people, and collaborate on new ideas.",
       media: [
         {
           type: 'image',
