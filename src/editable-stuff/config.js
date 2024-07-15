@@ -72,7 +72,7 @@ const leadership = {
   show: true,
   heading: "Portfolio",
   message1:
-    "Highalandia: This is Highalandia, an app which has 12 mini games focused on Teaching adults conversational English!",
+    "Highlandia: Highlandia is an Android educational app featuring 12 mini-games designed to teach adults conversational English in a fun and engaging way. The app includes games like Bubbles to learn the alphabet and numbers, Tracer to practice writing them, and Phonemes Run for pronunciation. Users can enjoy Shopping Spree to improve listening and reading skills while racing fellow shoppers, and Speak Up for dialogue practice. Highlandia offers a new curriculum, a first-time user experience in the native language, a pre-test, a topics menu, and overall gameplay and visual enhancements.",
   images1: [
     { 
       type: 'video',
@@ -264,7 +264,7 @@ const leadership = {
     },
   ],
   message10:
-    "Classic Breakout game with a level editor: ",
+    "Classic Breakout + Level Editor: ",
   images10: [
     { 
       type: 'image',
@@ -280,7 +280,7 @@ const leadership = {
     },
   ],
   message11:
-    "Graverunner: A C++ SDL platform runner game with a level editor",
+    "Graverunner + Level Editor: A C++ SDL platform runner game with a level editor",
   images11: [
     { 
       type: 'video',
@@ -302,7 +302,7 @@ const leadership = {
     },
   ],
   message12:
-    "Tower Defense: A C++ Tower Defense game made on a custom Game engine using SDL with a level editor",
+    "Tower Defense + Level Editor: A C++ Tower Defense game made on a custom Game engine using SDL with a level editor",
   images12: [
     { 
       type: 'video',
@@ -358,7 +358,7 @@ const leadership = {
     },
   ],
   message14:
-    "Clash Royale AI in C++: ",
+    "Clash Royale AI: ",
   images14: [
     { 
       type: 'image',

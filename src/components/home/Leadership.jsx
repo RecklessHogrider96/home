@@ -11,8 +11,17 @@ const Leadership = ({ heading, message1, img1, message2, img2, message3, img3, m
     >
       <h2 className="display-4 pb-5 text-center">{heading}</h2>
       <div className="row mt-5">
-        <div className="col-md-5">
-          <p className="lead">{message1}</p>
+        <div className="col-md-5 d-flex align-items-center justify-content-center">
+          <div className="text-center">
+            {message1.includes(':') ? (
+              <>
+                <h3>{message1.split(':')[0]}</h3>
+                <p className="lead">{message1.split(':').slice(1).join(':').trim()}</p>
+              </>
+            ) : (
+              <p className="lead">{message1}</p>
+            )}
+          </div>
         </div>
         <div className="col-md-1"></div>
         <div className="col-md-6">
