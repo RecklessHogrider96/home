@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/home/static/css/main.fe927caf.css",
-    "main.js": "/home/static/js/main.bcef51a1.js",
+    "main.js": "/home/static/js/main.aee865a2.js",
     "static/js/787.4b24f717.chunk.js": "/home/static/js/787.4b24f717.chunk.js",
     "static/media/demo.mp4": "/home/static/media/demo.9c811479f22fee621fc6.mp4",
     "static/media/demosr.mp4": "/home/static/media/demosr.9b99ec24efb694da1780.mp4",
@@ -10,7 +10,6 @@
     "static/media/GraveRunnerDemo.mp4": "/home/static/media/GraveRunnerDemo.2fca9fc37a149dd7f636.mp4",
     "static/media/scrabble_gary_cropped.png": "/home/static/media/scrabble_gary_cropped.4f232fc5ea144cbdd84d.png",
     "static/media/Oops.mp4": "/home/static/media/Oops.3e5c43bdd146644aa864.mp4",
-    "static/media/portrait1.png": "/home/static/media/portrait1.01daccc491a1a4f0b08b.png",
     "static/media/portrait.png": "/home/static/media/portrait.0ff63e4df23f2d95b119.png",
     "static/media/image (3).png": "/home/static/media/image (3).8d29e34e8e117960b957.png",
     "static/media/image (10).png": "/home/static/media/image (10).d7059c6a613911120e41.png",
@@ -25,7 +24,6 @@
     "static/media/image (19).png": "/home/static/media/image (19).6c7fec32ebcc7766caa5.png",
     "static/media/image (15).png": "/home/static/media/image (15).3a90b2fdb99ce2aa22fd.png",
     "static/media/image (25).png": "/home/static/media/image (25).506ce52d1e725d745d9d.png",
-    "static/media/portrait2.png": "/home/static/media/portrait2.1ff1d72345ece2f5525c.png",
     "static/media/image (13).png": "/home/static/media/image (13).9cecf4d7623f0fd6aeef.png",
     "static/media/image (12).png": "/home/static/media/image (12).e29dc9193164fa5dcc5a.png",
     "static/media/image (22).png": "/home/static/media/image (22).2c79c44c35b5ecee2f5c.png",
@@ -49,11 +47,11 @@
     "static/media/miloplelogo.png": "/home/static/media/miloplelogo.544a4e1e2636d31083f4.png",
     "index.html": "/home/index.html",
     "main.fe927caf.css.map": "/home/static/css/main.fe927caf.css.map",
-    "main.bcef51a1.js.map": "/home/static/js/main.bcef51a1.js.map",
+    "main.aee865a2.js.map": "/home/static/js/main.aee865a2.js.map",
     "787.4b24f717.chunk.js.map": "/home/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe927caf.css",
-    "static/js/main.bcef51a1.js"
+    "static/js/main.aee865a2.js"
   ]
 }
