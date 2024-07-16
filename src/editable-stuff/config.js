@@ -222,60 +222,6 @@ const leadership = {
       ]
     },
     {
-      heading: "ThoughtWorld",
-      message: "ThoughtWorld is an online platform not centered on pretty pictures, or keeping up with friends, or advocating for causes. It is about ideas. People are hungry for a forum where they can share ideas without being yelled at, laughed at, or cancelled. ThoughtWorld provides a safe place to explore new thoughts, anonymously interact with other verified real people, and collaborate on new ideas.",
-      media: [
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait2.png"), 
-          label: "", 
-          paragraph: "" 
-        },
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait1.png"), 
-          label: "", 
-          paragraph: "" 
-        }
-      ]
-    },
-    {
-      heading: "Wifi Direct Demo",
-      message: "Wifi Direct Demo: ",
-      media: [
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait2.png"), 
-          label: "", 
-          paragraph: "" 
-        },
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait1.png"), 
-          label: "", 
-          paragraph: "" 
-        }
-      ]
-    },
-    {
-      heading: "VR Shooting Game",
-      message: "VR Shooting Game",
-      media: [
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait2.png"), 
-          label: "", 
-          paragraph: "" 
-        },
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait1.png"), 
-          label: "", 
-          paragraph: "" 
-        }
-      ]
-    },
-    {
       heading: "Classic Breakout + Level Editor",
       message: "Classic Breakout + Level Editor: ",
       media: [
@@ -378,42 +324,6 @@ const leadership = {
       ]
     },
     {
-      heading: "Clash Royale AI",
-      message: "Clash Royale AI: ",
-      media: [
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait2.png"), 
-          label: "", 
-          paragraph: "" 
-        },
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait1.png"), 
-          label: "", 
-          paragraph: "" 
-        }
-      ]
-    },
-    {
-      heading: "Space Visualizer",
-      message: "Space Visualizer: ",
-      media: [
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait2.png"), 
-          label: "", 
-          paragraph: "" 
-        },
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait1.png"), 
-          label: "", 
-          paragraph: "" 
-        }
-      ]
-    },
-    {
       heading: "Match3 Engine",
       message: "You can create your own style of Match3 game by customizing your icons and audio too!",
       media: [
@@ -433,24 +343,6 @@ const leadership = {
           type: 'image',
           src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 9.00 PM.jpg"), 
           label: "Customize Music!", 
-          paragraph: "" 
-        }
-      ]
-    },
-    {
-      heading: "Vineyard Valley",
-      message: "Fixed Bugs on the live version for Jam City",
-      media: [
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait2.png"), 
-          label: "", 
-          paragraph: "" 
-        },
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait1.png"), 
-          label: "", 
           paragraph: "" 
         }
       ]
@@ -492,42 +384,6 @@ const leadership = {
         {
           type: 'image',
           src: require("../editable-stuff/MSDCricket/screen-3.jpg"), 
-          label: "", 
-          paragraph: "" 
-        }
-      ]
-    },
-    {
-      heading: "Furniture AR",
-      message: "Furniture AR:",
-      media: [
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait2.png"), 
-          label: "", 
-          paragraph: "" 
-        },
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait1.png"), 
-          label: "", 
-          paragraph: "" 
-        }
-      ]
-    },
-    {
-      heading: "Virtual Dressing Room",
-      message: "Virtual Dressing Room: ",
-      media: [
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait2.png"), 
-          label: "", 
-          paragraph: "" 
-        },
-        {
-          type: 'image',
-          src: require("../editable-stuff/portrait1.png"), 
           label: "", 
           paragraph: "" 
         }
