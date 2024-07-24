@@ -35,32 +35,17 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
-      {about.show && (
-        <AboutMe
-          heading={about.heading}
-          message1={about.message1}
-          message2={about.message2}
-          message3={about.message3}
-          link={about.imageLink}
-          imgSize={about.imageSize}
-          resume={about.resume}
-        />
-      )}
       {
-        education.show && (
-          <Education education={education}/>
-      )}
-      {
-        experience.show && (
-          <Experience experience={experience}/>
-      )}
-      {repos.show && (
-        <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
-        />
+        about.show && (
+          <AboutMe
+            heading={about.heading}
+            message1={about.message1}
+            message2={about.message2}
+            message3={about.message3}
+            link={about.imageLink}
+            imgSize={about.imageSize}
+            resume={about.resume}
+          />
       )}
       {leadership.show && (
         <Leadership
@@ -69,12 +54,30 @@ const Home = React.forwardRef((props, ref) => {
           imageSize={leadership.imageSize}
         />
       )}
-      {skills.show && (
-        <Skills
-          heading={skills.heading}
-          hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
-        />
+      {
+        experience.show && (
+          <Experience experience={experience}/>
+      )}
+      {
+        education.show && (
+          <Education education={education}/>
+      )}
+      {
+        repos.show && (
+          <Project
+            heading={repos.heading}
+            username={repos.gitHubUsername}
+            length={repos.reposLength}
+            specfic={repos.specificRepos}
+          />
+      )}
+      {
+        skills.show && (
+          <Skills
+            heading={skills.heading}
+            hardSkills={skills.hardSkills}
+            softSkills={skills.softSkills}
+          />
       )}
       
     </>

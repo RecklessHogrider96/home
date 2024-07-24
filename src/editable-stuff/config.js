@@ -73,7 +73,7 @@ const leadership = {
   sections: [
     {
       heading: "Highlandia",
-      message: "Highlandia is an Android educational app featuring 12 mini-games designed to teach adults conversational English in a fun and engaging way. The app includes games like Bubbles to learn the alphabet and numbers, Tracer to practice writing them, and Phonemes Run for pronunciation. Users can enjoy Shopping Spree to improve listening and reading skills while racing fellow shoppers, and Speak Up for dialogue practice. Highlandia offers a new curriculum, a first-time user experience in the native language, a pre-test, a topics menu, and overall gameplay and visual enhancements.",
+      message: "Integrated over 10 mini games into the Highlandia main application using C# and Unity's game development framework. Developed a robust Content Management Pipeline to seamlessly import curriculum content from Excel workbooks with over 15 sheets into Unity Scriptable Objects, ensuring efficient data handling and organization. Notably, built the \"Speak Up\" mini game, utilizing Whisper.io for real-time speech-to-text conversion through advanced natural language processing and streaming APIs.",
       media: [
         {
           type: 'video',
@@ -85,7 +85,7 @@ const leadership = {
     },
     {
       heading: "Skylars Run",
-      message: "Skylar’s Run provides children a fun yet challenging space to help players grow 13 key cognitive skills governing focus and attention! The goal of the game is for the player to hone these skills while advancing through different levels including infinite runners, item collection, puzzle matching, and more. The difficulty adjusts dynamically as the player progresses in any given level so it is never too hard or too easy but at just the right balance between both. Playable on smartphone and tablet.",
+      message: "Developed an endless runner game in Unity, refactoring the menu systems to follow the Model-View-Controller (MVC) pattern using C#. This architectural change improved the performance and responsiveness of loading information-heavy screens such as Leaderboards and Achievements. Additionally, implemented a dynamic notification system utilizing Unity's UI framework, allowing developers to spawn dialogue bubbles, error popups, notifications, and tutorial blobs with a single line of code, both in the main menu and during gameplay.",
       media: [
         {
           type: 'video',
@@ -97,7 +97,7 @@ const leadership = {
     },
     {
       heading: "Beast Boxers",
-      message: "A PVP boxer game! Built in Unity and with PUN, this boxing game was inspired by Mortal Kombat and we avoided ALL physics based interactions to make the gameplay as user-input focused as possible, where input timing was key to gameplay satisfaction.",
+      message: "Built a PVP boxing game in Unity using Photon Unity Networking (PUN) for real-time multiplayer functionality. Instead of traditional physics, the game employed a frame buffer system to synchronize animations and inputs between two players. Initially designed with a 30 FPS animation buffer, the system was later upgraded to 60 FPS for smoother gameplay. Inspired by classic Street Fighter mechanics, the system included rules such as blocking moves within the first 40 frames and handling move spamming by replacing the previous move if within the first 20 frames. These rules ensured a deterministic and responsive gameplay experience, optimizing for both offline and online play.",
       media: [
         {
           type: 'image',
@@ -407,6 +407,12 @@ const skills = {
     { name: "Game Artificial Intelligence", value: 90 },
     { name: "Data Structures", value: 85 },
     { name: "Algorithms", value: 85 },
+    { name: "Unity Game Engine", value: 95 },
+    { name: "Unreal Engine", value: 85 },
+    { name: "Godot Engine", value: 85 },
+    { name: "Game Architecture", value: 95 },
+    { name: "Game Design", value: 85 },
+    { name: "Design Patterns", value: 90 },
   ],
   softSkills: [
     { name: "Debugging and Troubleshooting", value: 95 },
