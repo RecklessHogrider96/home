@@ -102,38 +102,38 @@ const leadership = {
         {
           type: 'image',
           src: require("../editable-stuff/Beast Boxers/image (11).png"), 
-          label: "Home Screen", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Home Screen" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/Beast Boxers/image (12).png"), 
-          label: "Waiting for Opponent", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Waiting for Opponent" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/Beast Boxers/image (13).png"), 
-          label: "Online Opponent found!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Online Opponent found!" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/Beast Boxers/image (14).png"), 
-          label: "Fight!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Fight!" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/Beast Boxers/image (15).png"), 
-          label: "You win!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "You win!" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/Beast Boxers/image (16).png"), 
-          label: "Fight stats", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Fight stats!" 
         }
       ]
     },
@@ -168,32 +168,32 @@ const leadership = {
         {
           type: 'image',
           src: require("../editable-stuff/IKIN/image (17).png"), 
-          label: "The RYZ Holographic Projector", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "The RYZ Holographic Projector" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/IKIN/image (18).png"), 
-          label: "Landing Page", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Landing Page" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/IKIN/image (19).png"), 
-          label: "Loading up a Custom Scene which is rendered on the Holographic Projector", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Loading up a Custom Scene which is rendered on the Holographic Projector" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/IKIN/image (20).png"), 
-          label: "You can edit the scene in runtime!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "You can edit the scene in runtime!" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/IKIN/ryzdemo.jpg"), 
-          label: "The RYZ Holographic Projector", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "The RYZ Holographic Projector" 
         }
       ]
     },
@@ -204,38 +204,38 @@ const leadership = {
         {
           type: 'image',
           src: require("../editable-stuff/Mogaland/image.png"), 
-          label: "Connected Graph Data Structure - Quiz Progression Map", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Connected Graph Data Structure - Quiz Progression Map" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/Mogaland/image (1).png"), 
-          label: "Tiled Islands", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Tiled Islands" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/Mogaland/image (2).png"), 
-          label: "Gear System", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Gear System" 
         }
       ]
     },
     {
       heading: "Classic Breakout + Level Editor",
-      message: "Classic Breakout + Level Editor: ",
+      message: "",
       media: [
         {
           type: 'image',
           src: require("../editable-stuff/breakout/image (21).png"), 
-          label: "Breakout!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Breakout!" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/breakout/image (24).png"), 
-          label: "Breakout Level Editor", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Breakout Level Editor" 
         }
       ]
     },
@@ -252,14 +252,14 @@ const leadership = {
         {
           type: 'image',
           src: require("../editable-stuff/Platformer/image (23).png"), 
-          label: "Graverunner Level Editor", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Graverunner Level Editor" 
         },
         {
           type: 'video',
           src: require("../editable-stuff/Platformer/Oops.mp4"), 
-          label: "Oops, I died!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Oops, I died!" 
         }
       ]
     },
@@ -276,50 +276,50 @@ const leadership = {
         {
           type: 'image',
           src: require("../editable-stuff/TowerDefense/image (22).png"), 
-          label: "Multiple Custom Maps!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Multiple Custom Maps!" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/TowerDefense/image (25).png"), 
-          label: "Level Editor!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Level Editor!" 
         }
       ]
     },
     {
       heading: "Behavior Trees in Unity",
-      message: "Behavior Trees in Unity: ",
+      message: "",
       media: [
         {
           type: 'image',
           src: require("../editable-stuff/BehaviorTreesInUnity/EnemyBT.png"), 
-          label: "Enemy Behavior Tree - Next slide with Code to create this Tree", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Enemy Behavior Tree - Next slide with Code to create this Tree" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/BehaviorTreesInUnity/image (6).png"), 
-          label: "Behavior Tree shown in Previous slide created here", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Behavior Tree shown in Previous slide created here" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/BehaviorTreesInUnity/image (7).png"), 
-          label: "Types of Enemies - Long Range", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Types of Enemies - Long Range" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/BehaviorTreesInUnity/image (8).png"), 
-          label: "Types of Enemies - Short Range", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Types of Enemies - Short Range" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/BehaviorTreesInUnity/image (9).png"), 
-          label: "Types of Enemies - Medium Range", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Types of Enemies - Medium Range" 
         }
       ]
     },
@@ -330,19 +330,43 @@ const leadership = {
         {
           type: 'image',
           src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 8.56 PM.jpg"), 
-          label: "Match 3 game", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Match 3 game" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 8.58 PM.jpg"), 
-          label: "Customize Icons!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Customize Icons!" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/Match3Engine/Image 7-14-24 at 9.00 PM.jpg"), 
-          label: "Customize Music!", 
+          label: "", 
+          paragraph: "Customize Music!" 
+        }
+      ]
+    },
+    {
+      heading: "Wifi Direct Demo",
+      message: "This application built in Unity was a Proof of Concept for data transfer using WIFI Direct protocol between 2 devices. The platforms which this worked for were, android to android, iOS to iOS and iOS <-> Android. A device could assume one of 2 roles, Server role or client role. Multiple clients could connect to one server and transfer data simultaneously.",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/WifiDirectDemo/image1.png"),
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/WifiDirectDemo/image2.png"),
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/WifiDirectDemo/image3.png"),
+          label: "", 
           paragraph: "" 
         }
       ]
@@ -360,20 +384,20 @@ const leadership = {
         {
           type: 'image',
           src: require("../editable-stuff/MSDCricket/image (3).png"), 
-          label: "Multiple Game Modes!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Multiple Game Modes!" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/MSDCricket/image (4).png"), 
-          label: "Tournament mode!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Tournament mode!" 
         },
         {
           type: 'image',
           src: require("../editable-stuff/MSDCricket/image (5).png"), 
-          label: "Points Table!", 
-          paragraph: "" 
+          label: "", 
+          paragraph: "Points Table!" 
         },
         {
           type: 'image',
@@ -384,6 +408,60 @@ const leadership = {
         {
           type: 'image',
           src: require("../editable-stuff/MSDCricket/screen-3.jpg"), 
+          label: "", 
+          paragraph: "" 
+        }
+      ]
+    },
+    {
+      heading: "Furniture AR",
+      message: "Made a POC on Unity which initially used Vuforias plane detection to render furniture models into the augmented space. You could scale, drag and rotate these inputs through multi-finger input. Couple of months in, made the decision to swap to ARCore after it’s 1.0 release. Made the same application for iOS using ARKit as its plane detection was far superior and supported devices above Apple 7 (great at that time!). Later, used 3.js to render the furniture models on web but without the augmentation into real space.",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/FurnitureAR/image1.png"),
+          label: "", 
+          paragraph: "Placing furniture - Swift + ARKit"
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/FurnitureAR/image2.png"),
+          label: "", 
+          paragraph: "Placing furniture - Unity + Vuforia" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/FurnitureAR/image3.png"),
+          label: "", 
+          paragraph: "3D Web Viewer - 3.js" 
+        }
+      ]
+    },
+    {
+      heading: "Virtual Dressing Room",
+      message: "Used the XBox Kinect for Skeletal tracking and based off of that data structure, created invisible avatars (just did not render the character, so that the user saw themselves in the screen bringing the application as close as possible to a mirror!) upon which the clothes to be tried were swapped using hand swipe gestures! Super fancy, right? It was the POC that put me on track for video game development!",
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/VirtualDressingRoom/image1.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/VirtualDressingRoom/image2.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/VirtualDressingRoom/image3.png"), 
+          label: "", 
+          paragraph: "" 
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/VirtualDressingRoom/image4.png"), 
           label: "", 
           paragraph: "" 
         }
@@ -442,22 +520,16 @@ const experience = {
       role: 'Senior Game Developer',
       companylogo: require('../assets/img/cnlogo.png'),
       imageSize: 300,
-      date: 'June 2022 – Present',
+      date: 'Sep 2022 – Present',
     },
     {
       role: 'Graduate Teaching Assistant - Computer Graphics',
       companylogo: require('../assets/img/neulogoofficial.png'),
       imageSize: 300,
-      date: 'May 2022 – Aug 2022',
+      date: 'Jun 2022 – Aug 2022',
     },
     {
       role: 'Graduate Teaching Assistant - Game Artificial Intelligence',
-      companylogo: require('../assets/img/neulogoofficial.png'),
-      imageSize: 300,
-      date: 'Jan 2022 – May 2022',
-    },
-    {
-      role: 'Research Assistant - Mixed Reality Development',
       companylogo: require('../assets/img/neulogoofficial.png'),
       imageSize: 300,
       date: 'Jan 2022 – May 2022',
@@ -469,10 +541,16 @@ const experience = {
       date: 'Sept 2021 – Jan 2022',
     },
     {
+      role: 'Graduate Research Assistant - Mixed Reality Development',
+      companylogo: require('../assets/img/neulogoofficial.png'),
+      imageSize: 300,
+      date: 'Sept 2021 – Jan 2022',
+    },
+    {
       role: 'Game Programmer',
       companylogo: require('../assets/img/cnlogo.png'),
       imageSize: 300,
-      date: 'June 2021 – Aug 2021',
+      date: 'Jun 2021 – Aug 2021',
     },
     {
       role: 'Graduate Teaching Assistant - Game Programming',
@@ -484,7 +562,7 @@ const experience = {
       role: 'Game Developer',
       companylogo: require('../assets/img/gameshastralogo.png'),
       imageSize: 300,
-      date: 'Oct 2018 – Sept 2020',
+      date: 'Nov 2018 – Sept 2020',
     },
     {
       role: 'Software Engineer',
