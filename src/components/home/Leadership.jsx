@@ -7,17 +7,16 @@ const Leadership = ({ heading, sections, imageSize }) => {
     <Jumbotron id="leadership" className="m-0" style={{ backgroundColor: "white" }}>
       <h2 className="display-4 pb-5 text-center">{heading}</h2>
       {sections.map((section, i) => (
-        <div className="row mt-5" key={i}>
+        <div className="row mt-5 align-items-center" key={i}>
           {i % 2 === 0 ? (
             <>
-              <div className="col-md-5 d-flex align-items-center justify-content-center">
+              <div className="col-md-6 order-md-1 d-flex align-items-center justify-content-center">
                 <div className="text-center">
                   <h3>{section.heading}</h3>
                   <p className="lead">{section.message}</p>
                 </div>
               </div>
-              <div className="col-md-1"></div>
-              <div className="col-md-6">
+              <div className="col-md-6 order-md-2">
                 <Carousel>
                   {section.media.map((value, index) => (
                     <Carousel.Item key={index}>
@@ -39,7 +38,13 @@ const Leadership = ({ heading, sections, imageSize }) => {
             </>
           ) : (
             <>
-              <div className="col-md-6">
+              <div className="col-md-6 order-md-2 d-flex align-items-center justify-content-center">
+                <div className="text-center">
+                  <h3>{section.heading}</h3>
+                  <p className="lead">{section.message}</p>
+                </div>
+              </div>
+              <div className="col-md-6 order-md-1">
                 <Carousel>
                   {section.media.map((value, index) => (
                     <Carousel.Item key={index}>
@@ -57,13 +62,6 @@ const Leadership = ({ heading, sections, imageSize }) => {
                     </Carousel.Item>
                   ))}
                 </Carousel>
-              </div>
-              <div className="col-md-1"></div>
-              <div className="col-md-5 d-flex align-items-center justify-content-center">
-                <div className="text-center">
-                  <h3>{section.heading}</h3>
-                  <p className="lead">{section.message}</p>
-                </div>
               </div>
             </>
           )}
