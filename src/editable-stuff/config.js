@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Roshan",
   middleName: "",
   lastName: "Bellary",
-  message: " Games will eventually mimic reality. ",
+  message: " Games will eventually mimic reality",
   icons: [
     {
       image: "fa-github",
