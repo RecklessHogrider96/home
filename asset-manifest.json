@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/home/static/css/main.fe927caf.css",
-    "main.js": "/home/static/js/main.e215995f.js",
+    "main.js": "/home/static/js/main.1ff00ec8.js",
     "static/js/787.4b24f717.chunk.js": "/home/static/js/787.4b24f717.chunk.js",
     "static/media/demo.mp4": "/home/static/media/demo.9c811479f22fee621fc6.mp4",
     "static/media/demosr.mp4": "/home/static/media/demosr.9b99ec24efb694da1780.mp4",
@@ -33,28 +33,30 @@
     "static/media/image (22).png": "/home/static/media/image (22).2c79c44c35b5ecee2f5c.png",
     "static/media/image (16).png": "/home/static/media/image (16).820b81afb9bea3ea1303.png",
     "static/media/image (18).png": "/home/static/media/image (18).5a5acdfc972fb6c15513.png",
+    "static/media/EnemyBT.png": "/home/static/media/EnemyBT.b6d9b8d4eaaf2ef2d5bf.png",
     "static/media/image (20).png": "/home/static/media/image (20).adbed40c4517fbb54185.png",
     "static/media/image (23).png": "/home/static/media/image (23).f2b2c1d1df2d65c65928.png",
     "static/media/Image 7-14-24 at 8.56 PM.jpg": "/home/static/media/Image 7-14-24 at 8.56 PM.5fedcfcdfb785d9842a9.jpg",
-    "static/media/resume.pdf": "/home/static/media/resume.a04e7fc2768c4f4cf55b.pdf",
     "static/media/Image 7-14-24 at 8.58 PM.jpg": "/home/static/media/Image 7-14-24 at 8.58 PM.92eb2dd641101c81fb39.jpg",
+    "static/media/resume.pdf": "/home/static/media/resume.b1a344fb2571d5ea45dc.pdf",
     "static/media/Image 7-14-24 at 9.00 PM.jpg": "/home/static/media/Image 7-14-24 at 9.00 PM.f64711671de16240dd54.jpg",
     "static/media/screen-2.jpg": "/home/static/media/screen-2.d817812a0c2dcf38e302.jpg",
+    "static/media/image (6).png": "/home/static/media/image (6).4f552b5a31a8033dea4a.png",
     "static/media/image (24).png": "/home/static/media/image (24).ad00fb457ddf4ba4c5a5.png",
     "static/media/neulogoofficial.png": "/home/static/media/neulogoofficial.a81b90466b1f1c5ecc0a.png",
     "static/media/screen-3.jpg": "/home/static/media/screen-3.db44ed58e9c7197b72e2.jpg",
     "static/media/image (21).png": "/home/static/media/image (21).d2cbde74dcbf4f004e6e.png",
+    "static/media/bdglogo.png": "/home/static/media/bdglogo.a5b0cdf9dc10c7458668.png",
     "static/media/ifhe-logo.png": "/home/static/media/ifhe-logo.f545d8e7beeac331a3bb.png",
-    "static/media/cnlogo.png": "/home/static/media/cnlogo.e06bb4bf16f33958be2a.png",
     "static/media/niclogo.png": "/home/static/media/niclogo.7a4ab21ac97c1d26ac11.png",
     "static/media/miloplelogo.png": "/home/static/media/miloplelogo.544a4e1e2636d31083f4.png",
     "index.html": "/home/index.html",
     "main.fe927caf.css.map": "/home/static/css/main.fe927caf.css.map",
-    "main.e215995f.js.map": "/home/static/js/main.e215995f.js.map",
+    "main.1ff00ec8.js.map": "/home/static/js/main.1ff00ec8.js.map",
     "787.4b24f717.chunk.js.map": "/home/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe927caf.css",
-    "static/js/main.e215995f.js"
+    "static/js/main.1ff00ec8.js"
   ]
 }
