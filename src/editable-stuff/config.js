@@ -517,10 +517,16 @@ const experience = {
   heading: "Experience",
   data: [
     {
+      role: 'Senior Software Developer',
+      companylogo: require('../assets/img/bdglogo.png'),
+      imageSize: 300,
+      date: 'Aug 2025 – Present',
+    },
+    {
       role: 'Senior Game Developer',
       companylogo: require('../assets/img/cnlogo.png'),
       imageSize: 300,
-      date: 'Sep 2022 – Present',
+      date: 'Sep 2022 – Aug 2025',
     },
     {
       role: 'Graduate Teaching Assistant - Computer Graphics',
