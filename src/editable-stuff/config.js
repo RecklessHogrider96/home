@@ -46,7 +46,8 @@ const about = {
   "My project repertoire is as eclectic as it is extensive. From concocting a custom game engine with SDL2 in C++, to architecting intricate "
   + "2D and 3D rendering systems in C, my work is a testament to both my technical skill and creative vision. I've plunged into the world "
   + "of virtual reality with a VR game for the Oculus Quest 2, sculpted in Unity, and devised a behavior tree system in C# that makes game AI "
-  + "both intuitive and flexible. Even my hidden maze game in Java is a playground of portals, shooting mechanics, and customizable assets.",
+  + "both intuitive and flexible. Even my hidden maze game in Java is a playground of portals, shooting mechanics, and customizable assets. "
+  + "Most recently I built Audio to Notes, a browser app that turns piano recordings into playable piano notes and guitar tab.",
   message3:
   "Academically, I’ve traversed the landscape of computer science, earning a Master’s degree in Artificial Intelligence from Northeastern University "
   + "and a Bachelor’s in Computer Science Engineering from ICFAI University. This rigorous education, combined with my hands-on exploits, has forged "
@@ -64,13 +65,54 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "recklesshogrider96", //i.e."johnDoe12Gh"
   reposLength: 8,
-  specificRepos: [],
+  specificRepos: ["audio2notes"],
 };
 
 const leadership = {
   show: true,
   heading: "Portfolio",
   sections: [
+    {
+      heading: "Audio to Notes",
+      badge: "New · 2026",
+      message: "A web app that listens to a piano recording and turns it into notes you can play, as a piano roll or as guitar tab. It runs entirely in the browser, so recordings never leave the device.",
+      highlights: [
+        "Spotify's Basic Pitch neural network runs in the browser with TensorFlow.js, tuned to an F1 score of 0.93–0.98 on test pieces",
+        "Guitar fingering engine that uses real chord shapes, keeps the hand in one position and can simplify piano parts to melody + bass",
+        "Note editor with undo/redo and one-click noise removal; exports MIDI and text tab",
+        "Five color themes with light and dark mode, and a logo that animates to the music in real time",
+      ],
+      links: [
+        { label: "Try it live", url: "https://recklesshogrider96.github.io/audio2notes/", icon: "fas fa-play" },
+        { label: "Source code", url: "https://github.com/RecklessHogrider96/audio2notes", icon: "fab fa-github" },
+      ],
+      media: [
+        {
+          type: 'image',
+          src: require("../editable-stuff/AudioToNotes/overview.jpg"),
+          label: "",
+          paragraph: "Drop in a recording, trim it, transcribe"
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/AudioToNotes/piano-roll.jpg"),
+          label: "",
+          paragraph: "Piano roll with falling notes (dark mode)"
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/AudioToNotes/guitar-tab.jpg"),
+          label: "",
+          paragraph: "Guitar tab with chord names and a live fretboard"
+        },
+        {
+          type: 'image',
+          src: require("../editable-stuff/AudioToNotes/themes.jpg"),
+          label: "",
+          paragraph: "Five color themes, each with light and dark"
+        }
+      ]
+    },
     {
       heading: "Highlandia",
       message: "Integrated over 10 mini games into the Highlandia main application using C# and Unity's game development framework. Developed a robust Content Management Pipeline to seamlessly import curriculum content from Excel workbooks with over 15 sheets into Unity Scriptable Objects, ensuring efficient data handling and organization. Notably, built the \"Speak Up\" mini game, utilizing Whisper.io for real-time speech-to-text conversion through advanced natural language processing and streaming APIs.",
@@ -227,13 +269,13 @@ const leadership = {
       media: [
         {
           type: 'image',
-          src: require("../editable-stuff/breakout/image (21).png"), 
+          src: require("../editable-stuff/Breakout/image (21).png"), 
           label: "", 
           paragraph: "Breakout!" 
         },
         {
           type: 'image',
-          src: require("../editable-stuff/breakout/image (24).png"), 
+          src: require("../editable-stuff/Breakout/image (24).png"), 
           label: "", 
           paragraph: "Breakout Level Editor" 
         }
@@ -507,8 +549,7 @@ const getInTouch = {
   show: true,
   heading: "Hit me up!",
   message:
-    "I'm currently looking for full-time Video Game Development opportunities! I recognize Game Engines and coding languages as tools of the trade and have always felt comfortable putting them all to use."
-    + " If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+    "Whether you have a project in mind, a question about something I've built, or you just want to say hi, I'd love to hear from you. Email me at",
   email: "roshangovind96@gmail.com",
 };
 
