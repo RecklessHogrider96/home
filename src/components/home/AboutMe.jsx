@@ -1,59 +1,30 @@
 import React from "react";
-
-import axios from "axios";
 import { Jumbotron } from "./migration";
 
-const pictureLinkRegex = new RegExp(
-  /[(http(s)?):(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
-);
-
+// The old version tried to fetch a profile picture from Instagram's public API, which no longer exists.
+// The portrait is a local image, so it is shown directly (smaller and centred on phones, beside the text on wide screens).
 const AboutMe = ({ heading, message1, message2, message3, link, imgSize, resume }) => {
-  const [profilePicUrl, setProfilePicUrl] = React.useState("");
-  const [showPic, setShowPic] = React.useState(Boolean(link));
-  // https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook
-  React.useEffect(() => {
-    const handleRequest = async () => {
-      const instaLink = "https://www.instagram.com/";
-      const instaQuery = "/?__a=1";
-      try {
-        const response = await axios.get(instaLink + link + instaQuery);
-        setProfilePicUrl(response.data.graphql.user.profile_pic_url_hd);
-      } catch (error) {
-        setShowPic(false);
-        console.error(error.message);
-      }
-    };
-
-    if (link && !pictureLinkRegex.test(link)) {
-      handleRequest();
-    } else {
-      setProfilePicUrl(link);
-    }
-  }, [link]);
-
-
-
   return (
     <Jumbotron id="aboutme" className="m-0">
-      <div className="container row">
-        <div className="col-5 d-none d-lg-block align-self-center">
-          {showPic && (
+      <div className="row align-items-center g-5">
+        {link && (
+          <div className="col-lg-5 text-center">
             <img
-              className="border border-secondary rounded-circle"
-              src={profilePicUrl}
-              alt="profilepicture"
+              className="about-portrait border border-secondary rounded-circle"
+              src={link}
+              alt="Roshan Bellary"
               width={imgSize}
               height={imgSize}
             />
-          )}
-        </div>
-        <div className={`col-lg-${showPic ? "7" : "12"}`}>
-          <h2 className="display-4 mb-5 text-center">{heading}</h2>
-          <p className="lead text-center">{message1}</p>
-          <p className="lead text-center">{message2}</p>
-          <p className="lead text-center">{message3}</p>
+          </div>
+        )}
+        <div className={link ? "col-lg-7" : "col-12"}>
+          <h2 className="display-4 mb-4 text-center text-lg-start">{heading}</h2>
+          {[message1, message2, message3].filter(Boolean).map((m, i) => (
+            <p className="lead about-text" key={i}>{m}</p>
+          ))}
           {resume && (
-            <p className="lead text-center">
+            <p className="text-center text-lg-start mt-4 mb-0">
               <a
                 className="btn btn-outline-dark btn-lg"
                 href={resume}
