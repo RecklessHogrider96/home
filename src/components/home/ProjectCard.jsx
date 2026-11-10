@@ -5,61 +5,51 @@ import Skeleton from "react-loading-skeleton";
 import axios from "axios";
 
 const ProjectCard = ({ value }) => {
-  const {
-    name,
-    description,
-    svn_url,
-    stargazers_count,
-    languages_url,
-    pushed_at,
-  } = value;
+  const { name, description, svn_url, stargazers_count, languages_url, pushed_at, default_branch, homepage } = value;
+  const loading = !svn_url;
   return (
-    <Col md={6}>
-      <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-        <Card.Body>
-          <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+    <Col md={6} className="d-flex">
+      <Card className="card shadow-lg p-3 mb-5 bg-white rounded w-100">
+        <Card.Body className="d-flex flex-column">
+          <Card.Title as="h5">{name || <Skeleton />}</Card.Title>
+          <Card.Text>{loading ? <Skeleton count={2} /> : description || <span className="text-muted">No description yet.</span>}</Card.Text>
+          {loading ? <Skeleton count={2} /> : <CardButtons svn_url={svn_url} branch={default_branch} homepage={homepage} />}
           <hr />
-          {languages_url ? (
-            <Language languages_url={languages_url} repo_url={svn_url} />
-          ) : (
-            <Skeleton count={3} />
-          )}
-          {value ? (
-            <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
-          ) : (
-            <Skeleton />
-          )}
+          {loading ? <Skeleton count={3} /> : <Language languages_url={languages_url} repo_url={svn_url} />}
+          <div className="mt-auto">
+            {loading ? <Skeleton /> : <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />}
+          </div>
         </Card.Body>
       </Card>
     </Col>
   );
 };
 
-const CardButtons = ({ svn_url }) => {
+const CardButtons = ({ svn_url, branch, homepage }) => {
   return (
-    <div className="d-grid gap-2 d-md-block">
-      <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mx-2"
-      >
-        <i className="fab fa-github" /> Clone Project
+    <div className="d-flex flex-wrap gap-2">
+      {homepage && (
+        <a href={homepage} target="_blank" rel="noopener noreferrer" className="btn btn-dark">
+          <i className="fas fa-external-link-alt me-1" /> Live
+        </a>
+      )}
+      <a href={svn_url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary">
+        <i className="fab fa-github me-1" /> Repo
       </a>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-        <i className="fab fa-github" /> Repo
+      <a href={`${svn_url}/archive/refs/heads/${branch || "master"}.zip`} className="btn btn-outline-secondary">
+        <i className="fas fa-download me-1" /> Download ZIP
       </a>
     </div>
   );
 };
 
 const Language = ({ languages_url, repo_url }) => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
 
   const handleRequest = useCallback(async () => {
     try {
       const response = await axios.get(languages_url);
-      return setData(response.data);
+      setData(response.data);
     } catch (error) {
       console.error(error.message);
     }
@@ -69,55 +59,41 @@ const Language = ({ languages_url, repo_url }) => {
     handleRequest();
   }, [handleRequest]);
 
-  const array = [];
-  let total_count = 0;
-  for (let index in data) {
-    array.push(index);
-    total_count += data[index];
-  }
+  const languages = Object.keys(data);
+  const total = languages.reduce((sum, l) => sum + data[l], 0);
 
   return (
-    <div className="pb-3">
-      Languages:{" "}
-      {array.length
-        ? array.map((language) => (
-          <a
-            key={language}
-            className="card-link"
-            href={repo_url + `/search?l=${language}`}
-            target=" _blank"
-            rel="noopener noreferrer"
-          >
-            <span className="badge bg-light text-dark">
-              {language}:{" "}
-              {Math.trunc((data[language] / total_count) * 1000) / 10} %
-            </span>
-          </a>
-
-        ))
-        : "code yet to be deployed."}
+    <div className="pb-3 d-flex flex-wrap gap-1 align-items-center">
+      <span className="me-1">Languages:</span>
+      {languages.length
+        ? languages.map((language) => (
+            <a
+              key={language}
+              className="text-decoration-none"
+              href={repo_url + `/search?l=${encodeURIComponent(language)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="badge bg-light text-dark border">
+                {language}: {Math.trunc((data[language] / total) * 1000) / 10}%
+              </span>
+            </a>
+          ))
+        : <span className="text-muted">none listed</span>}
     </div>
   );
 };
 
 const CardFooter = ({ star_count, repo_url, pushed_at }) => {
-  const [updated_at, setUpdated_at] = useState("0 mints");
+  const [updated_at, setUpdated_at] = useState("");
 
   const handleUpdatetime = useCallback(() => {
     const date = new Date(pushed_at);
-    const nowdate = new Date();
-    const diff = nowdate.getTime() - date.getTime();
-    const hours = Math.trunc(diff / 1000 / 60 / 60);
-
-    if (hours < 24) {
-      if (hours < 1) return setUpdated_at("just now");
-      let measurement = hours === 1 ? "hour" : "hours";
-      return setUpdated_at(`${hours.toString()} ${measurement} ago`);
-    } else {
-      const options = { day: "numeric", month: "long", year: "numeric" };
-      const time = new Intl.DateTimeFormat("en-US", options).format(date);
-      return setUpdated_at(`on ${time}`);
-    }
+    const hours = Math.trunc((Date.now() - date.getTime()) / 1000 / 60 / 60);
+    if (hours < 1) return setUpdated_at("just now");
+    if (hours < 24) return setUpdated_at(`${hours} ${hours === 1 ? "hour" : "hours"} ago`);
+    const time = new Intl.DateTimeFormat("en-US", { day: "numeric", month: "long", year: "numeric" }).format(date);
+    return setUpdated_at(`on ${time}`);
   }, [pushed_at]);
 
   useEffect(() => {
@@ -125,16 +101,9 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
   }, [handleUpdatetime]);
 
   return (
-    <p className="card-text">
-      <a
-        href={repo_url + "/stargazers"}
-        target=" _blank"
-        className="text-dark text-decoration-none"
-      >
-        <span className="text-dark card-link mr-4">
-          <i className="fab fa-github" /> Stars{" "}
-          <span className="badge badge-dark">{star_count}</span>
-        </span>
+    <p className="card-text d-flex flex-wrap gap-3 align-items-center mb-0">
+      <a href={repo_url + "/stargazers"} target="_blank" rel="noopener noreferrer" className="text-dark text-decoration-none">
+        <i className="fas fa-star" /> Stars <span className="badge bg-dark">{star_count}</span>
       </a>
       <small className="text-muted">Updated {updated_at}</small>
     </p>
