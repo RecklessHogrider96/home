@@ -1,29 +1,19 @@
 import React from 'react';
+import Row from "react-bootstrap/Row";
 import ExperienceCard from "./ExperienceCard";
 import { Jumbotron } from './migration';
-import {
-  Container,
-  Row,
-} from "react-bootstrap";
 
+// The section used to wrap a container inside another container, which made it narrower than the rest of the page.
 const Experience = ({ experience }) => {
   return (
-    <section className="section">
-      <Container>
-        <Jumbotron fluid id="experience" className="bg-white">
-          <h2 className="display-4 mb-5 text-center">
-            {experience.heading}
-          </h2>
-          <Row>
-            {
-              experience.data.map((data, index) => {
-                return <ExperienceCard key={index} data={data} />
-              })
-            }
-          </Row>
-        </Jumbotron>
-      </Container>
-    </section>
+    <Jumbotron id="experience" className="m-0" style={{ backgroundColor: "#f8f9fa" }}>
+      <h2 className="display-4 mb-5 text-center">{experience.heading}</h2>
+      <Row className="g-4">
+        {experience.data.map((data, index) => (
+          <ExperienceCard key={index} data={data} />
+        ))}
+      </Row>
+    </Jumbotron>
   );
 }
 

@@ -31,77 +31,37 @@ const Navigation = React.forwardRef((props, ref) => {
       : setIsTop(true);
   }, [navBottom, navbarDimensions, ref, scrollPosition]);
 
+  // On phones the menu collapses again after a link is tapped (it used to stay open over the page).
+  const [expanded, setExpanded] = useState(false);
+  const links = [
+    about.show && ["#aboutme", "About"],
+    leadership.show && ["#leadership", "Portfolio"],
+    experience.show && ["#experience", "Experience"],
+    education.show && ["#education", "Education"],
+    repos.show && ["#projects", "Projects"],
+    skills.show && ["#skills", "Skills"],
+  ].filter(Boolean);
+
   return (
     <Navbar
       ref={navbarMenuRef}
-      className={`px-3 fixed-top  ${!isTop ? "navbar-white" : "navbar-transparent"
-        }`}
+      className={`px-3 fixed-top  ${!isTop || expanded ? "navbar-white" : "navbar-transparent"}`}
       expand="lg"
+      expanded={expanded}
+      onToggle={setExpanded}
     >
-      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"} onClick={() => setExpanded(false)}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="navbar-nav mr-auto">
-          {/* {
-            <NavLink className="nav-item lead">
-              <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
+      <Navbar.Collapse id="basic-navbar-nav" onClick={(e) => { if (e.target.closest("a")) setExpanded(false); }}>
+        <Nav className="navbar-nav me-auto">
+          {links.map(([hash, label]) => (
+            <NavLink key={hash} className="nav-item lead" href={process.env.PUBLIC_URL + "/" + hash}>
+              {label}
             </NavLink>
-          } */}
-          {about.show && (
-            <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
-            >
-              About
-            </NavLink>
-          )}
-          {leadership.show && (
-            <NavLink
-              href={process.env.PUBLIC_URL + "/#leadership"}
-            >
-              Portfolio
-            </NavLink>
-          )}
-          {repos.show && (
-
-            <NavLink
-              href={process.env.PUBLIC_URL + "/#projects"}
-            >
-              Projects
-            </NavLink>
-          )}
-          {education.show && (
-
-            <NavLink
-              href={process.env.PUBLIC_URL + "/#education"}
-            >
-              Education
-            </NavLink>
-            )}
-          {experience.show && (
-
-            <NavLink
-              href={process.env.PUBLIC_URL + "/#experience"}
-            >
-              Experience
-            </NavLink>
-          )}
-          {skills.show && (
-            <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#skills"}
-            >
-              Skills
-            </NavLink>
-          )}
-          <NavLink
-            className="nav-item lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
+          ))}
+          <NavLink className="nav-item lead" href={about.resume} target="_blank" rel="noreferrer noopener">
             Resume
           </NavLink>
         </Nav>
