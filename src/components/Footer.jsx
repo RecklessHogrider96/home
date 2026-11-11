@@ -23,6 +23,12 @@ const Footer = (props) => {
             Project code is open source. Feel free to fork and make your own
             version.
           </small>
+          <br />
+          <small className="text-muted">
+            Visits are counted anonymously with{" "}
+            <a href="https://www.goatcounter.com" target="_blank" rel="noopener noreferrer" className="text-muted">GoatCounter</a>
+            , without cookies.
+          </small>
         </p>
       </Container>
     </footer>

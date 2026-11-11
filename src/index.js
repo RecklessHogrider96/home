@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import "./scss/custom.scss";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initAnalytics } from './analytics';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,6 +11,9 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+// anonymous visit counts and which sections, projects and links people use (live site only)
+initAnalytics();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
